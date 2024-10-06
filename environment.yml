@@ -1,0 +1,44 @@
+name: tech2ai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - python-dotenv
+  - requests
+  - beautifulsoup4
+  - pydub
+  - numpy
+  - pandas
+  - scipy
+  - pytorch
+  - jupyterlab
+  - ipywidgets
+  - pyarrow
+  - anthropic
+  - google-generativeai
+  - matplotlib
+  - scikit-learn
+  - chromadb
+  - langchain
+  - langchain-text-splitters
+  - langchain-openai
+  - langchain-experimental
+  - langchain-chroma
+  - faiss-cpu
+  - tiktoken
+  - jupyter-dash
+  - plotly
+  - feedparser
+  - pip:
+    - transformers
+    - sentence-transformers
+    - datasets
+    - sentencepiece
+    - bitsandbytes
+    - openai
+    - gradio
+    - gensim
+    - modal
+
