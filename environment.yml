@@ -31,6 +31,7 @@ dependencies:
   - jupyter-dash
   - plotly
   - feedparser
+  - twilio
   - pip:
     - transformers
     - sentence-transformers
@@ -41,4 +42,4 @@ dependencies:
     - gradio
     - gensim
     - modal
-
+    - torchviz
