@@ -43,9 +43,9 @@ class App:
         self.agent_framework = None
 
     def get_agent_framework(self):
-                if not self.agent_framework:
-                    self.agent_framework = DealAgentFramework()
-                return self.agent_framework
+        if not self.agent_framework:
+            self.agent_framework = DealAgentFramework()
+        return self.agent_framework
 
     def run(self):
         with gr.Blocks(title="The Price is Right", fill_width=True) as ui:
@@ -106,40 +106,24 @@ class App:
 
                 return fig
         
-            def start():
-                self.get_agent_framework().init_agents()
-                self.get_agent_framework().run()
-                opportunities = self.get_agent_framework().memory
-                table = table_for(opportunities)
-                return table
-        
             def do_run():
-                self.get_agent_framework().run()
-                new_opportunities = self.get_agent_framework().memory
+                new_opportunities = self.get_agent_framework().run()
                 table = table_for(new_opportunities)
                 return table
 
-            def do_with_logging(function, initial_log_data):
+            def run_with_logging(initial_log_data):
                 log_queue = queue.Queue()
                 result_queue = queue.Queue()
                 setup_logging(log_queue)
                 
                 def worker():
-                    result = function()
+                    result = do_run()
                     result_queue.put(result)
                 
                 thread = threading.Thread(target=worker)
                 thread.start()
                 
                 for log_data, output, final_result in update_output(initial_log_data, log_queue, result_queue):
-                    yield log_data, output, final_result
-
-            def start_with_logging(initial_log_data):
-                for log_data, output, final_result in do_with_logging(start, initial_log_data):
-                    yield log_data, output, final_result
-
-            def run_with_logging(initial_log_data):
-                for log_data, output, final_result in do_with_logging(do_run, initial_log_data):
                     yield log_data, output, final_result
 
             def do_select(selected_index: gr.SelectData):
@@ -167,13 +151,10 @@ class App:
                 with gr.Column(scale=1):
                     plot = gr.Plot(value=get_plot(), show_label=False)
         
-            ui.load(start_with_logging, inputs=[log_data], outputs=[log_data, logs, opportunities_dataframe])
+            ui.load(run_with_logging, inputs=[log_data], outputs=[log_data, logs, opportunities_dataframe])
 
             timer = gr.Timer(value=300, active=True)
             timer.tick(run_with_logging, inputs=[log_data], outputs=[log_data, logs, opportunities_dataframe])
-
-            # timer2 = gr.Timer(value=5, active=True)
-            # timer2.tick(get_plot, inputs=[], outputs=[plot, timer2])
 
             opportunities_dataframe.select(do_select)
         

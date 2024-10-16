@@ -45,11 +45,13 @@ class DealAgentFramework:
         client = chromadb.PersistentClient(path=self.DB)
         self.memory = self.read_memory()
         self.collection = client.get_or_create_collection('products')
+        self.planner = None
 
-    def init_agents(self):
-        self.log("Initializing Agent Framework")
-        self.planner = PlanningAgent(self.collection)
-        self.log("Agent Framework is ready")
+    def init_agents_as_needed(self):
+        if not self.planner:
+            self.log("Initializing Agent Framework")
+            self.planner = PlanningAgent(self.collection)
+            self.log("Agent Framework is ready")
         
     def read_memory(self) -> List[Opportunity]:
         if os.path.exists(self.MEMORY_FILENAME):
@@ -68,14 +70,15 @@ class DealAgentFramework:
         text = BG_BLUE + WHITE + "[Agent Framework] " + message + RESET
         logging.info(text)
 
-    def run(self) -> Optional[Opportunity]:
+    def run(self) -> List[Opportunity]:
+        self.init_agents_as_needed()
         logging.info("Kicking off Planning Agent")
         result = self.planner.plan(memory=self.memory)
         logging.info(f"Planning Agent has completed and returned: {result}")
         if result:
             self.memory.append(result)
             self.write_memory()
-        return result
+        return self.memory
 
     @classmethod
     def get_plot_data(cls, max_datapoints=10000):

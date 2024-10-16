@@ -12,8 +12,10 @@ class Item:
     """
     An Item is a cleaned, curated datapoint of a Product with a Price
     """
+
+    # This line is commented out as we don't directly use the tokenizer in the class
+    # tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, trust_remote_code=True)
     
-    tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, trust_remote_code=True)
     PREFIX = "Price is $"
     QUESTION = "How much does this cost to the nearest dollar?"
     REMOVALS = ['"Batteries Included?": "No"', '"Batteries Included?": "Yes"', '"Batteries Required?": "No"', '"Batteries Required?": "Yes"', "By Manufacturer", "Item", "Date First", "Package", ":", "Number of", "Best Sellers", "Number", "Product "]

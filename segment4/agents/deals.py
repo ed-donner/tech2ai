@@ -75,14 +75,15 @@ class ScrapedDeal:
     def fetch(cls, show_progress : bool = False) -> List[Self]:
         """
         Retrieve all deals from the selected RSS feeds
+        Include a slight pause to ensure we don't overload the deals website
         """
         deals = []
         feed_iter = tqdm(feeds) if show_progress else feeds
         for feed_url in feed_iter:
             feed = feedparser.parse(feed_url)
-            for entry in feed.entries[:10]:
+            for entry in feed.entries[:5]:
                 deals.append(cls(entry))
-                time.sleep(0.5)
+                time.sleep(0.1)
         return deals
 
 class Deal(BaseModel):

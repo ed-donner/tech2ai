@@ -19,209 +19,56 @@
   },
   {
     "deal": {
-      "product_description": "The Certified Refurbished Acer Nitro V laptop boasts a powerful 13th Generation Intel Core i5 processor, perfect for gaming and multitasking. With its 15.6-inch 1080p IPS display and NVIDIA GeForce RTX 4050 GPU, expect stunning visuals and smooth performance for all your gaming needs. It comes with 8GB RAM and a 512GB SSD, ensuring fast load times and ample storage. This model is backed by a 2-year warranty from Allstate, ensuring reliable performance for years to come.",
-      "price": 560.0,
-      "url": "https://www.dealnews.com/products/Acer/Nitro-V-13-th-Gen-i5-15-6-Laptop-w-NVIDIA-Ge-Force-RTX-4050/480447.html?iref=rss-c39"
-    },
-    "estimate": 925.1468647365509,
-    "discount": 365.1468647365509
-  },
-  {
-    "deal": {
-      "product_description": "This EcoFlow DELTA 2 (950) Portable Power Station is designed to meet all your mobile energy needs. With a capacity of 1024Wh, it features six AC outlets and multiple USB ports, allowing you to charge various devices simultaneously. The included 800W alternator charger ensures quick recharging, making it an ideal power solution for camping trips or emergency situations. Its Wi-Fi and Bluetooth capabilities provide easy control and monitoring.",
-      "price": 699.0,
-      "url": "https://www.dealnews.com/Eco-Flow-DELTA-2-950-Portable-Power-Station-800-W-Alternator-Charger-for-699-free-shipping/21671420.html?iref=rss-c142"
-    },
-    "estimate": 869.9627492224658,
-    "discount": 170.96274922246585
-  },
-  {
-    "deal": {
-      "product_description": "This 12V 280Ah LiFePO4 battery offers advanced lithium iron phosphate technology, providing lightweight yet robust power storage for a variety of applications including solar, RV, and marine use. Its long cycle life ensures you can rely on it for consistent performance over time. With built-in BMS (Battery Management System) for safe operation and efficiency, this battery is designed for those who prioritize both reliability and energy efficiency.",
-      "price": 400.0,
-      "url": "https://www.dealnews.com/12-V-280-Ah-Li-Fe-PO4-Battery-for-400-free-shipping/21676885.html?iref=rss-c142"
-    },
-    "estimate": 744.6978640830646,
-    "discount": 344.6978640830646
-  },
-  {
-    "deal": {
-      "product_description": "This certified refurbished Apple iPhone 14 features 128GB of storage, providing ample space for apps, photos, and videos. Known for its performance, the iPhone 14 includes advanced camera capabilities and a long-lasting battery, setting standards in smartphone technology. The device comes with a one-year warranty from Allstate, ensuring reliability and support for customers. This refurbished option is an excellent choice for users looking for quality at a lower price point.",
-      "price": 425.0,
-      "url": "https://www.dealnews.com/products/Apple/Refurb-Unlocked-Apple-iPhone-14-128-GB-Phone-Excellent-Cond/472441.html?iref=rss-c142"
-    },
-    "estimate": 667.340418267145,
-    "discount": 242.34041826714497
-  },
-  {
-    "deal": {
-      "product_description": "The iRobot Roomba j7+ is a highly efficient WiFi self-emptying robot vacuum designed to make cleaning effortless. With advanced smart mapping technology, it can identify and avoid obstacles, ensuring a thorough cleaning of your home. This model offers a self-emptying base, eliminating the need for manual bag changes. A runtime of 90 minutes allows it to cover large areas, making it ideal for busy households.",
-      "price": 250.0,
-      "url": "https://www.dealnews.com/products/iRobot/iRobot-Roomba-j7-Wi-Fi-Self-Emptying-Robot-Vacuum/293669.html?iref=rss-f1912"
-    },
-    "estimate": 621.4089582478217,
-    "discount": 371.4089582478217
-  },
-  {
-    "deal": {
-      "product_description": "The certified refurbished iRobot Roomba 692 is a smart cleaning device that simplifies household upkeep. This vacuum operates with three-stage cleaning technology and has a compatibility feature with smart assistants such as Alexa and Google Home. It is designed for efficient cleaning across hard floors and carpets, providing a 90-minute runtime per charge. This model comes with a 2-year warranty from Allstate, ensuring peace of mind along with top-notch functionality for your cleaning needs.",
-      "price": 120.0,
-      "url": "https://www.dealnews.com/products/iRobot/iRobot-Roomba-692-Robot-Vacuum/143125.html?iref=rss-f1912"
-    },
-    "estimate": 304.1034980572389,
-    "discount": 184.10349805723888
-  },
-  {
-    "deal": {
-      "product_description": "The Certified Refurb Acer Swift Edge Ryzen 7 Laptop features an advanced AMD Ryzen 7 7735U 8-core processor, offering exceptional performance for both work and play. It is equipped with a 16GB RAM and a spacious 1TB SSD, ensuring smooth multitasking and ample storage for your files. The 16-inch display boasts a stunning 3840x2400 resolution, making it ideal for streaming and content creation. This laptop is certified refurbished, meaning it comes backed by a 2-year warranty for peace of mind.",
-      "price": 760.0,
-      "url": "https://www.dealnews.com/Certified-Refurb-Acer-Swift-Edge-Ryzen-7-16-Laptop-for-760-free-shipping/21682096.html?iref=rss-c39"
-    },
-    "estimate": 985.5902213719573,
-    "discount": 225.59022137195734
-  },
-  {
-    "deal": {
-      "product_description": "The Klipsch T5 II True Wireless ANC Earphones offer a high-fidelity audio experience combined with active noise-canceling technology. These earbuds come with six sizes of patented, color-coded oval ear tips to ensure a comfortable fit for all users. The device is equipped with a two-mic hybrid design, enhancing call quality while reducing background noise. With intuitive head gesture controls, you can easily manage your audio playback without needing to reach for your device.",
-      "price": 68.0,
-      "url": "https://www.dealnews.com/products/Klipsch/Klipsch-T5-II-True-Wireless-ANC-Earphones/482823.html?iref=rss-c142"
-    },
-    "estimate": 309.56921733594834,
-    "discount": 241.56921733594834
-  },
-  {
-    "deal": {
-      "product_description": "The Certified Refurbished Acer Aspire 3 laptop boasts a powerful 6th-generation AMD Ryzen 5 processor and a spacious 15.6-inch touchscreen display with full HD resolution. It is equipped with 16GB of RAM and a 1TB SSD, providing ample storage and fast performance. This model comes with Windows 11 Home and is backed by a two-year warranty.",
-      "price": 288.0,
-      "url": "https://www.dealnews.com/products/Acer/Acer-Aspire-3-6-th-Gen-Ryzen-5-15-6-Touchscreen-Laptop/476367.html?iref=rss-c39"
-    },
-    "estimate": 558.5214284656016,
-    "discount": 270.5214284656016
-  },
-  {
-    "deal": {
-      "product_description": "The Eufy eufyCam S330 (eufyCam 3) 4-Camera kit comes equipped with advanced security features, making it a top choice for home monitoring. Each camera offers high-resolution 4K video and includes an integrated solar panel for continuous powering, thus eliminating the need for frequent recharges. The system utilizes artificial intelligence for facial recognition, effectively distinguishing between family and strangers. Furthermore, it includes a 1TB hard drive for expandable local storage, ensuring that you have ample room to save recorded footage without additional fees.",
-      "price": 650.0,
-      "url": "https://www.dealnews.com/products/Eufy/eufy-Cam-S330-eufy-Cam-3-4-Camera-Kit-1-TB-HDD/464094.html?iref=rss-c196"
-    },
-    "estimate": 901.053559336033,
-    "discount": 251.053559336033
-  },
-  {
-    "deal": {
-      "product_description": "The Shark IQ Robot Vacuum is designed to simplify your cleaning routine with its 60-day capacity base, which allows it to store more dirt before needing to be emptied. It comes equipped with advanced navigation technology to efficiently clean your floors while avoiding obstacles. This self-emptying feature not only saves you time but also ensures your home remains clean with minimal effort on your part. It's a perfect solution for busy households looking for convenience.",
-      "price": 267.0,
-      "url": "https://www.dealnews.com/Shark-IQ-Robot-Vacuum-w-60-Day-Capacity-Base-for-267-free-shipping/21668563.html?iref=rss-f1912"
-    },
-    "estimate": 495.68476864134675,
-    "discount": 228.68476864134675
-  },
-  {
-    "deal": {
-      "product_description": "The Dell Inspiron 15 Laptop is equipped with a 12th Generation Intel Core i5 processor and a 15.6-inch touchscreen display, providing a dynamic computing experience for work and entertainment. With 8GB of RAM and a 512GB SSD, it offers sufficient memory for multitasking and fast boot-up times. This laptop runs Windows 11 Home in S Mode, enhancing its performance for everyday tasks. Its sleek design and robust features make it a practical choice for students and professionals alike.",
-      "price": 350.0,
-      "url": "https://www.dealnews.com/products/Dell/Dell-Inspiron-15-12-th-Gen-i5-15-6-Touchscreen-Laptop-w-512-GB-SSD/479057.html?iref=rss-c39"
-    },
-    "estimate": 577.1076076116793,
-    "discount": 227.10760761167933
-  },
-  {
-    "deal": {
-      "product_description": "The EcoFlow DELTA 2 (950) Portable Power Station is designed for convenience and reliability, boasting a 1024Wh capacity that can power multiple devices simultaneously. It features six AC outlets, two USB-A, and two USB-C ports, making it versatile for outdoor adventures, emergencies, or everyday use. With both Wi-Fi and Bluetooth connectivity, you can monitor the status of your power station right from your smartphone. This bundle also comes with an 800W alternator charger, ensuring that you have everything you need to stay powered up wherever you go.",
-      "price": 699.0,
-      "url": "https://www.dealnews.com/Eco-Flow-DELTA-2-950-Portable-Power-Station-800-W-Alternator-Charger-for-699-free-shipping/21673983.html?iref=rss-c142"
-    },
-    "estimate": 963.8626028683989,
-    "discount": 264.8626028683989
-  },
-  {
-    "deal": {
-      "product_description": "The Certified Refurb iRobot Roomba i4 EVO WiFi Robot Vacuum combines smart technology with powerful cleaning capabilities. This robot vacuum is designed to navigate effortlessly through your home, providing thorough cleaning on multiple surfaces. With WiFi connectivity, users can control the vacuum remotely via a smartphone app. The three-stage cleaning system ensures a deep clean, making it a perfect addition for busy households.",
-      "price": 130.0,
-      "url": "https://www.dealnews.com/products/iRobot/iRobot-Roomba-i4-EVO-Wi-Fi-Robot-Vacuum/431157.html?iref=rss-f1912"
-    },
-    "estimate": 341.23175777017946,
-    "discount": 211.23175777017946
-  },
-  {
-    "deal": {
-      "product_description": "The ZimaBoard 832 Single Board Server is a versatile and compact solution for home or office use, equipped with robust processing power suitable for a variety of applications, including media streaming and file servers. It is designed for ease of use, with capabilities for expansion and customization. Its lightweight and energy-efficient design makes it an ideal selection for developers and tech enthusiasts seeking a reliable platform for programming and digital projects.",
-      "price": 140.0,
-      "url": "https://www.dealnews.com/Zima-Board-832-Single-Board-Server-for-140-free-shipping/21676871.html?iref=rss-c39"
-    },
-    "estimate": 292.84135797094723,
-    "discount": 152.84135797094723
-  },
-  {
-    "deal": {
-      "product_description": "The EcoFlow DELTA 2 (950) Portable Power Station is a robust solution for all your electrical needs while on the go. With a 1024Wh capacity, this power station is versatile enough to charge multiple devices simultaneously, thanks to its six AC outlets. Additionally, it features two USB-A and two USB-C ports, enabling you to charge laptops, phones, and other electronics quickly. Bundled with an 800W Alternator Charger, it's designed to ensure you have power, wherever your adventures may lead you.",
-      "price": 699.0,
-      "url": "https://www.dealnews.com/Eco-Flow-DELTA-2-950-Portable-Power-Station-800-W-Alternator-Charger-for-699-free-shipping/21676798.html?iref=rss-c142"
-    },
-    "estimate": 870.8927901823207,
-    "discount": 171.8927901823207
-  },
-  {
-    "deal": {
-      "product_description": "The Dell Inspiron 15 Laptop features a 12th-Gen Intel Core i7-1255U processor, which delivers robust processing power for multitasking and demanding applications. It boasts a 15.6\" 1920x1080 120Hz display, enhancing the viewing experience whether you're working or enjoying entertainment. With 16GB of RAM and a 1TB NVMe SSD, this laptop provides extensive storage and fast performance, making it a great choice for students and professionals alike.",
-      "price": 480.0,
-      "url": "https://www.dealnews.com/Dell-Inspiron-15-12-th-Gen-i7-15-6-120-Hz-Laptop-for-480-free-shipping/21687594.html?iref=rss-c39"
-    },
-    "estimate": 969.9685288961223,
-    "discount": 489.9685288961223
-  },
-  {
-    "deal": {
-      "product_description": "The Samsung Galaxy Watch Ultra is a sophisticated smartwatch designed for active lifestyles. Featuring a 47mm display, it includes a robust set of health monitoring capabilities, such as heart rate tracking and GPS functionality, ensuring you stay on top of your health goals. Additionally, the watch boasts customizable watch faces, a variety of fitness tracking modes, and is built to withstand harsh conditions, making it a reliable companion for outdoor enthusiasts.",
+      "product_description": "The Samsung Galaxy Watch Ultra is a high-end smartwatch designed for fitness enthusiasts and tech aficionados alike. Measuring 47mm, it features a stunning display and advanced tracking capabilities for various sports and health metrics. With customizable watch faces and a robust build, this watch is both stylish and functional. Users can take advantage of trade-in deals, making it a cost-effective choice for those looking to upgrade their wearable technology. Free shipping is included with the purchase.",
       "price": 250.0,
       "url": "https://www.dealnews.com/Samsung-Galaxy-Watch-Ultra-47-mm-Smartwatch-Up-to-400-off-w-trade-in-free-shipping/21687735.html?iref=rss-c142"
     },
-    "estimate": 587.7677751542296,
-    "discount": 337.76777515422964
+    "estimate": 600.7008693831391,
+    "discount": 350.7008693831391
   },
   {
     "deal": {
-      "product_description": "The Oklahoma Joe's Hitch Portable Charcoal Grill is perfect for camping, tailgating, or backyard cooking. It features 220 square inches of cooking space on porcelain-coated grates which ensures excellent heat retention and food release. This grill also includes a removable combination charcoal grate and ash pan for easy cleaning, as well as dual adjustable air dampers with locking set points to control airflow and temperature. Its portable design makes it convenient to take anywhere, delivering great grilling performance on the go.",
-      "price": 50.0,
-      "url": "https://www.dealnews.com/Oklahoma-Joes-Hitch-Portable-Charcoal-Grill-for-50-free-shipping/21688010.html?iref=rss-c196"
+      "product_description": "The Pioneer 65\" Class LED 4K UHD Smart Xumo TV offers an immersive viewing experience with its stunning 3840x2160 (4K) native resolution. Designed for the modern home, it supports Dolby Vision, HDR 10, and HLG for breathtaking picture quality. With 3 HDMI inputs, this TV is versatile enough to accommodate multiple devices such as gaming consoles, streaming devices, and sound systems.",
+      "price": 300.0,
+      "url": "https://www.dealnews.com/products/Pioneer/Pioneer-65-Class-LED-4-K-UHD-Smart-Xumo-TV/461838.html?iref=rss-c142"
     },
-    "estimate": 196.19277230245078,
-    "discount": 146.19277230245078
+    "estimate": 900.2484367329819,
+    "discount": 600.2484367329819
   },
   {
     "deal": {
-      "product_description": "The Unlocked Samsung Galaxy S24 FE Android Smartphone is a state-of-the-art device featuring a vibrant display and powerful performance. This smartphone is designed for those who seek a combination of style and functionality, making it a perfect choice for multimedia consumption and productivity alike. With its advanced camera system, you can capture stunning photos and videos, while the fast processing capabilities ensure smooth multitasking. It runs on Android OS and is compatible with the latest apps and services. The device is priced at $99.99.",
-      "price": 99.99,
-      "url": "https://www.dealnews.com/Unlocked-Samsung-Galaxy-S24-FE-Android-Smartphone-Up-to-400-off-w-trade-in-free-shipping/21687746.html?iref=rss-c142"
+      "product_description": "The Project Source Omaha Unfinished 60\" Ready-To-Assemble Sink Base is a versatile cabinet solution for your kitchen or bathroom remodel. Measuring 60\" x 34.5\" x 24.5\", it features two spacious drawers to organize your kitchen essentials efficiently. This sink base offers a sturdy foundation for your sink installation, and as an unfinished product, it can be customized with paint or stain to match your personal decor style. An excellent choice for DIY enthusiasts looking to enhance their living spaces.",
+      "price": 85.0,
+      "url": "https://www.dealnews.com/Project-Source-Omaha-Unfinished-60-Ready-To-Assemble-Sink-Base-for-85-free-shipping/21688772.html?iref=rss-c196"
     },
-    "estimate": 569.3841609538313,
-    "discount": 469.39416095383126
+    "estimate": 238.16586269049517,
+    "discount": 153.16586269049517
   },
   {
     "deal": {
-      "product_description": "The Better Homes and Gardens Meritmoor 9-Foot Steel Pergola combines style and functionality, making it an ideal addition to your outdoor space. This pergola features a beige adjustable canopy with smooth gliding tracks for customized shade coverage, whether partial or complete. With ground spikes included, it can be securely anchored to your yard, providing durability and stability for outdoor gatherings and relaxation under the sun.",
-      "price": 166.0,
-      "url": "https://www.dealnews.com/Better-Homes-and-Gardens-Meritmoor-9-Foot-Steel-Pergola-for-166-free-shipping/21687608.html?iref=rss-c196"
+      "product_description": "The Slumber 1 By Zinus 12\" King Support Innerspring Mattress offers a blend of comfort and support, ideal for restful sleep. This mattress features 1.25 inches of high-density foam and 4.5 inches of Visco Latex foam for excellent contouring. Its 6-inch base layer consists of heavy-duty steel coils that provide robust support. Measuring 12 inches thick, it provides ample cushioning for a comfortable sleeping experience while ensuring durability. This mattress is a great value for those seeking a king-sized option.",
+      "price": 128.0,
+      "url": "https://www.dealnews.com/products/Zinus/Slumber-1-By-Zinus-12-King-Support-Innerspring-Mattress/483577.html?iref=rss-c196"
     },
-    "estimate": 390.57483877740106,
-    "discount": 224.57483877740106
+    "estimate": 362.0217013342668,
+    "discount": 234.02170133426682
   },
   {
     "deal": {
-      "product_description": "The Google Nest Hello Video Doorbell combines high-end security with smart technology, offering 1600x1200 resolution with HDR support and a 160\u00b0 field of view. It allows for night vision and motion detection, providing peace of mind any time of day. Additionally, the two-way audio feature lets you communicate with visitors through the Nest app, further enhancing your home security.",
-      "price": 90.0,
-      "url": "https://www.dealnews.com/products/Google/Google-Nest-Hello-Video-Doorbell/164518.html?iref=rss-f1912"
+      "product_description": "The Sony Bluetooth Wireless Headphones WH-CH520 offer high-quality audio with features like multipoint connection and 360 Reality Audio for an immersive listening experience. With a remarkable 50-hour battery life, these headphones are perfect for long listening sessions, whether you're on the go or relaxing at home. Their sleek black design adds a touch of style while ensuring comfort for extended wear. Ideal for music lovers and casual listeners alike, these headphones deliver excellent sound without breaking the bank.",
+      "price": 40.0,
+      "url": "https://www.dealnews.com/products/Sony-Electronics/Sony-Bluetooth-Wireless-Headphones/418722.html?iref=rss-c142"
     },
-    "estimate": 210.23714726408366,
-    "discount": 120.23714726408366
+    "estimate": 113.7988845564492,
+    "discount": 73.7988845564492
   },
   {
     "deal": {
-      "product_description": "The Insignia Class F30 Series NS-55F301NA25 is a 55\" 4K HDR LED UHD Smart TV equipped with Amazon Fire TV, allowing users instant access to streaming content and various apps easily. It features 3840x2160 resolution for crystal clear picture quality and includes 3 HDMI ports for versatile connectivity options. Perfect for movie nights or sports viewing, this TV is designed for an immersive home entertainment experience.",
-      "price": 210.0,
-      "url": "https://www.dealnews.com/products/Insignia/Insignia-Class-F30-Series-NS-55-F301-NA25-55-4-K-HDR-LED-UHD-Smart-TV/467523.html?iref=rss-f1912"
+      "product_description": "The Vizio V4K65M-0804 is a 65\" 4K HDR LED UHD Smart TV that promises an impressive viewing experience with its 3840 x 2160 resolution and support for Dolby Vision and HDR10+. It comes equipped with the Vizio Home smart platform, making it compatible with major voice assistants like Google Assistant and Alexa for easy control. This TV offers a variety of HDMI inputs for connecting your favorite devices, giving you flexibility in managing your home entertainment setup, and ensuring you never miss a moment of your shows or movies.",
+      "price": 378.0,
+      "url": "https://www.dealnews.com/products/Vizio/Vizio-V4-K65-M-0804-65-4-K-HDR-LED-UHD-Smart-TV/483583.html?iref=rss-c142"
     },
-    "estimate": 673.7313240071801,
-    "discount": 463.7313240071801
+    "estimate": 916.6300215467238,
+    "discount": 538.6300215467238
   }
 ]

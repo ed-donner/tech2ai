@@ -21,7 +21,7 @@ class EnsembleAgent(Agent):
         self.specialist = SpecialistAgent()
         self.frontier = FrontierAgent(collection)
         self.random_forest = RandomForestAgent()
-        self.model = joblib.load('ensemble_model.pkl')
+        self.model = joblib.load('../ensemble_model.pkl')
         self.log("Ensemble Agent is ready")
 
     def price(self, description: str) -> float:

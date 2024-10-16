@@ -1,10 +1,17 @@
-# From Software Engineering to AI Data Science
+# From Software Engineering to AI Data Scientist
 
 ## For software engineers exploring a career move into Data Science, GenAI, LLMs
 
-![From Software Engineering To Data Science](tech2ai.jpg)
+This is code to accompany my course on transitioning from a technical career to AI Data Science. We'll be building some extremely satisfying projects over the next 4 segments.  
 
-This is code to accompany my course on transitioning from a technical career to AI Data Science. We'll be building some extremely satisfying projects over the next 4 segments.
+**Essential links:**    
+1. The course [resources](https://edwarddonner.com/2024/10/16/from-software-engineer-to-ai-data-scientist-resources/)
+2. The [O'Reilly Live Event](https://learning.oreilly.com/live-events/from-software-engineer-to-ai-data-scientist/0642572007671/) for this repo
+3. My related O'Reilly Live Event on [Choosing LLMS](https://learning.oreilly.com/live-events/choosing-the-right-llm/0642572002832/)
+4. My 8 week action-packed course on [mastering LLM engineering](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/?referralCode=35EB41EBB11DD247CF54)
+5. If you'd like to stay in touch, please [connect](https://www.linkedin.com/in/eddonner/) with me on LinkedIn!
+
+![From Software Engineering To Data Science](tech2ai.jpg)
 
 ### A note before you begin
 
@@ -83,7 +90,7 @@ You should see `(tech2ai)` in your prompt, which indicates you've activated your
 
 - In the Anaconda Prompt, type: `jupyter lab`
 
-...and Jupyter Lab should open up, ready for you to get started. Open the `segment1` folder and double click on `lab1.ipnbk`.
+...and Jupyter Lab should open up, ready for you to get started. Open the `segment1` folder and double click on `lab1.ipynb`.
 
 ### For Mac Users
 
@@ -128,7 +135,7 @@ You should see `(tech2ai)` in your prompt, which indicates you've activated your
 
 - In Terminal, type: `jupyter lab`
 
-...and Jupyter Lab should open up, ready for you to get started. Open the `segment1` folder and double click on `lab1.ipnbk`.
+...and Jupyter Lab should open up, ready for you to get started. Open the `segment1` folder and double click on `lab1.ipynb`.
 
 ### When we get to it, creating your API keys
 

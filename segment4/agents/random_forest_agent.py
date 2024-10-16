@@ -21,7 +21,7 @@ class RandomForestAgent(Agent):
         """
         self.log("Random Forest Agent is initializing")
         self.vectorizer = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-        self.model = joblib.load('random_forest_model.pkl')
+        self.model = joblib.load('../random_forest_model.pkl')
         self.log("Random Forest Agent is ready")
 
     def price(self, description: str) -> float:
