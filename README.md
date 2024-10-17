@@ -2,7 +2,7 @@
 
 ## For software engineers exploring a career move into Data Science, GenAI, LLMs
 
-This is code to accompany my course on transitioning from a technical career to AI Data Science. We'll be building some extremely satisfying projects over the next 4 segments.  
+This is code to accompany my course on transitioning from a technical career to AI Data Science.  
 
 **Essential links:**    
 1. The course [resources](https://edwarddonner.com/2024/10/16/from-software-engineer-to-ai-data-scientist-resources/)
