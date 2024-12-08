@@ -84,6 +84,7 @@ class ScannerAgent(Agent):
                     {"role": "system", "content": self.SYSTEM_PROMPT},
                     {"role": "user", "content": user_prompt}
               ],
+                max_tokens=1000,
                 response_format=DealSelection
             )
             result = result.choices[0].message.parsed
@@ -91,4 +92,25 @@ class ScannerAgent(Agent):
             self.log(f"Scanner Agent received {len(result.deals)} selected deals with price>0 from OpenAI")
             return result
         return None
+
+    def test_scan(self, memory: List[str]=[]) -> Optional[DealSelection]:
+        """
+        Return a test DealSelection, to be used during testing
+        """
+        results = {'deals': [{'product_description': "The Hisense R6 Series 55R6030N is a 55-inch 4K UHD Roku Smart TV that offers stunning picture quality with 3840x2160 resolution. It features Dolby Vision HDR and HDR10 compatibility, ensuring a vibrant and dynamic viewing experience. The TV runs on Roku's operating system, allowing easy access to streaming services and voice control compatibility with Google Assistant and Alexa. With three HDMI ports available, connecting multiple devices is simple and efficient.",
+           'price': 178,
+           'url': 'https://www.dealnews.com/products/Hisense/Hisense-R6-Series-55-R6030-N-55-4-K-UHD-Roku-Smart-TV/484824.html?iref=rss-c142'},
+          {'product_description': 'The Poly Studio P21 is a 21.5-inch LED personal meeting display designed specifically for remote work and video conferencing. With a native resolution of 1080p, it provides crystal-clear video quality, featuring a privacy shutter and stereo speakers. This display includes a 1080p webcam with manual pan, tilt, and zoom control, along with an ambient light sensor to adjust the vanity lighting as needed. It also supports 5W wireless charging for mobile devices, making it an all-in-one solution for home offices.',
+           'price': 30,
+           'url': 'https://www.dealnews.com/products/Poly-Studio-P21-21-5-1080-p-LED-Personal-Meeting-Display/378335.html?iref=rss-c39'},
+          {'product_description': 'The Lenovo IdeaPad Slim 5 laptop is powered by a 7th generation AMD Ryzen 5 8645HS 6-core CPU, offering efficient performance for multitasking and demanding applications. It features a 16-inch touch display with a resolution of 1920x1080, ensuring bright and vivid visuals. Accompanied by 16GB of RAM and a 512GB SSD, the laptop provides ample speed and storage for all your files. This model is designed to handle everyday tasks with ease while delivering an enjoyable user experience.',
+           'price': 446,
+           'url': 'https://www.dealnews.com/products/Lenovo/Lenovo-Idea-Pad-Slim-5-7-th-Gen-Ryzen-5-16-Touch-Laptop/485068.html?iref=rss-c39'},
+          {'product_description': 'The Dell G15 gaming laptop is equipped with a 6th-generation AMD Ryzen 5 7640HS 6-Core CPU, providing powerful performance for gaming and content creation. It features a 15.6-inch 1080p display with a 120Hz refresh rate, allowing for smooth and responsive gameplay. With 16GB of RAM and a substantial 1TB NVMe M.2 SSD, this laptop ensures speedy performance and plenty of storage for games and applications. Additionally, it includes the Nvidia GeForce RTX 3050 GPU for enhanced graphics and gaming experiences.',
+           'price': 650,
+           'url': 'https://www.dealnews.com/products/Dell/Dell-G15-Ryzen-5-15-6-Gaming-Laptop-w-Nvidia-RTX-3050/485067.html?iref=rss-c39'},
+          {'product_description': 'The certified refurbished iRobot Roomba j7+ is a self-emptying robot vacuum that simplifies floor cleaning with minimal effort. Equipped with WiFi connectivity, it allows for smartphone control and can be integrated into smart home systems. The vacuum is designed to recognize and avoid obstacles, ensuring a thorough clean without interruptions. It includes a 2-year warranty backed by Allstate, providing peace of mind alongside its powerful cleaning capabilities.',
+           'price': 230,
+           'url': 'https://www.dealnews.com/products/iRobot/iRobot-Roomba-j7-Wi-Fi-Self-Emptying-Robot-Vacuum/293669.html?iref=rss-f1912'}]}
+        return DealSelection(**results)
                 

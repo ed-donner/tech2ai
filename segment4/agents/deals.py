@@ -12,7 +12,6 @@ feeds = [
         "https://www.dealnews.com/c39/Computers/?rss=1",
         "https://www.dealnews.com/c238/Automotive/?rss=1",
         "https://www.dealnews.com/f1912/Smart-Home/?rss=1",
-        "https://www.dealnews.com/c196/Home-Garden/?rss=1",
        ]
 
 def extract(html_snippet: str) -> str:
@@ -54,10 +53,21 @@ class ScrapedDeal:
         content = soup.find('div', class_='content-section').get_text()
         content = content.replace('\nmore', '').replace('\n', ' ')
         if "Features" in content:
-            self.details, self.features = content.split("Features")
+            splits = content.split("Features")
+            self.details = splits[0]
+            self.features = splits[1]
         else:
             self.details = content
             self.features = ""
+        self.truncate()
+
+    def truncate(self):
+        """
+        Limit the fields to a sensible length to avoid sending too much info to the model
+        """
+        self.title = self.title[:100]
+        self.details = self.details[:500]
+        self.features = self.features[:500]
 
     def __repr__(self):
         """
@@ -83,7 +93,7 @@ class ScrapedDeal:
             feed = feedparser.parse(feed_url)
             for entry in feed.entries[:5]:
                 deals.append(cls(entry))
-                time.sleep(0.1)
+                time.sleep(0.05)
         return deals
 
 class Deal(BaseModel):

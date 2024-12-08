@@ -3,7 +3,6 @@ import sys
 import logging
 import json
 from typing import List, Optional
-from twilio.rest import Client
 from dotenv import load_dotenv
 import chromadb
 from agents.planning_agent import PlanningAgent
@@ -66,6 +65,16 @@ class DealAgentFramework:
         with open(self.MEMORY_FILENAME, "w") as file:
             json.dump(data, file, indent=2)
 
+    @classmethod
+    def reset_memory(cls) -> None:
+        data = []
+        if os.path.exists(cls.MEMORY_FILENAME):
+            with open(cls.MEMORY_FILENAME, "r") as file:
+                data = json.load(file)
+        truncated = data[:2]
+        with open(cls.MEMORY_FILENAME, "w") as file:
+            json.dump(truncated, file, indent=2)
+
     def log(self, message: str):
         text = BG_BLUE + WHITE + "[Agent Framework] " + message + RESET
         logging.info(text)
@@ -81,7 +90,7 @@ class DealAgentFramework:
         return self.memory
 
     @classmethod
-    def get_plot_data(cls, max_datapoints=10000):
+    def get_plot_data(cls, max_datapoints=2000):
         client = chromadb.PersistentClient(path=cls.DB)
         collection = client.get_or_create_collection('products')
         result = collection.get(include=['embeddings', 'documents', 'metadatas'], limit=max_datapoints)

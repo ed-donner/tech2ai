@@ -30,7 +30,7 @@ class EnsembleAgent(Agent):
         Ask each of the models to price the product
         Then use the Linear Regression model to return the weighted price
         :param description: the description of a product
-        :return: an estimate of its price
+        :return: an estimate of its price, floored at 0
         """
         self.log("Running Ensemble Agent - collaborating with specialist, frontier and random forest agents")
         specialist = self.specialist.price(description)
@@ -43,6 +43,6 @@ class EnsembleAgent(Agent):
             'Min': [min(specialist, frontier, random_forest)],
             'Max': [max(specialist, frontier, random_forest)],
         })
-        y = self.model.predict(X)[0]
+        y = max(self.model.predict(X)[0],0)
         self.log(f"Ensemble Agent complete - returning ${y:.2f}")
         return y
