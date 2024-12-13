@@ -8,7 +8,7 @@ from agents.agent import Agent
 class MessagingAgent(Agent):
 
     name = "Messaging Agent"
-    color = Agent.MAGENTA
+    color = Agent.WHITE
 
     def __init__(self):
         """
