@@ -20,8 +20,6 @@ sentencepiece
 matplotlib
 google-generativeai
 anthropic
-scikit-learn
-unstructured
 chromadb
 plotly
 jupyter-dash
@@ -29,9 +27,10 @@ beautifulsoup4
 modal
 ollama
 accelerate
-sentencepiece
 bitsandbytes
 psutil
 setuptools
 speedtest-cli
 torchviz
+groq
+networkx

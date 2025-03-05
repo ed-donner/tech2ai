@@ -5,7 +5,7 @@ import json
 from typing import List, Optional
 from dotenv import load_dotenv
 import chromadb
-from agents.planning_agent import PlanningAgent
+from agents.autonomous_planning_agent import AutonomousPlanningAgent
 from agents.deals import Opportunity
 from sklearn.manifold import TSNE
 import numpy as np
@@ -49,7 +49,7 @@ class DealAgentFramework:
     def init_agents_as_needed(self):
         if not self.planner:
             self.log("Initializing Agent Framework")
-            self.planner = PlanningAgent(self.collection)
+            self.planner = AutonomousPlanningAgent(self.collection)
             self.log("Agent Framework is ready")
         
     def read_memory(self) -> List[Opportunity]:

@@ -8,7 +8,7 @@ This is code to accompany my course on transitioning from a technical career to 
 1. The course [resources](https://edwarddonner.com/2024/10/16/from-software-engineer-to-ai-data-scientist-resources/)
 2. I'm running a number of [Live Events](https://www.oreilly.com/search/?q=author%3A%20%22Ed%20Donner%22) with O'Reilly and Pearson
 3. My 8 week action-packed course on [mastering LLM engineering](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/?referralCode=35EB41EBB11DD247CF54)
-4. If you'd like to stay in touch, please [connect](https://www.linkedin.com/in/eddonner/) with me on LinkedIn!
+4. If you'd like to stay in touch, I'm multi-modal... please [connect](https://www.linkedin.com/in/eddonner/) with me on LinkedIn, [follow](https://x.com/edwarddonner) me on X, and [subscribe](https://www.youtube.com/@Edward.Donner) to my YouTube channel!
 
 ![From Software Engineering To Data Science](tech2ai.jpg)
 
@@ -31,6 +31,19 @@ Follow the setup instructions below, then open the segment 1 folder and prepare 
 ### The most important part
 
 The best way to learn is by **DOING**. You should work along with me, running each cell, inspecting the objects to get a detailed understanding of what's happening. Then tweak the code and make it your own. I'd love it if you wanted to push your code so I can follow along with your progress, and I can make your solutions available to others so we share in your progress. While the projects are enjoyable, they are first and foremost designed to be _educational_, teaching you business skills that can be put into practice in your work.
+
+## Pre-setup - installing Ollama for local inference
+
+### Important note: see my warning about Llama3.3 below - it's too large for home computers! Stick with llama3.2! Several students have missed this warning...
+
+We will start the course by installing Ollama so you can see results immediately!
+1. Download and install Ollama from https://ollama.com noting that on a PC you might need to have administrator permissions for the install to work properly
+2. On a PC, start a Command prompt / Powershell (Press Win + R, type `cmd`, and press Enter). On a Mac, start a Terminal (Applications > Utilities > Terminal).
+3. Run `ollama run llama3.2` or for smaller machines try `ollama run llama3.2:1b` - **please note** steer clear of Meta's latest model llama3.3 because at 70B parameters that's way too large for most home computers!  
+4. If this doesn't work: you may need to run `ollama serve` in another Powershell (Windows) or Terminal (Mac), and try step 3 again. On a PC, you may need to be running in an Admin instance of Powershell.  
+5. And if that doesn't work on your box, I've set up this on the cloud. This is on Google Colab, which will need you to have a Google account to sign in, but is free:  https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
+
+Any problems, please contact me!
 
 ## Setup instructions
 

@@ -12,6 +12,7 @@ import chromadb
 from items import Item
 from testing import Tester
 from agents.agent import Agent
+from groq import Groq
 
 
 class FrontierAgent(Agent):
@@ -19,7 +20,9 @@ class FrontierAgent(Agent):
     name = "Frontier Agent"
     color = Agent.BLUE
 
-    MODEL = "gpt-4o-mini"
+    MODEL_GPT = "gpt-4o-mini"
+    MODEL_DEEPSEEK = "deepseek-r1-distill-llama-70b"
+    PREPROCESS_MODEL = "llama3.2"
     
     def __init__(self, collection):
         """
@@ -27,7 +30,16 @@ class FrontierAgent(Agent):
         And setting up the vector encoding model
         """
         self.log("Initializing Frontier Agent")
-        self.openai = OpenAI()
+        groq_key = os.getenv("GROQ_API_KEY")
+        if groq_key:
+            self.client = Groq()
+            self.MODEL = self.MODEL_DEEPSEEK
+            self.log("Frontier Agent is set up with DeepSeek-R1 via Groq")
+        else:
+            self.client = OpenAI()
+            self.MODEL = self.MODEL_GPT
+            self.log("Frontier Agent is setting up with OpenAI")
+        self.ollama_via_openai = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')
         self.collection = collection
         self.model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
         self.log("Frontier Agent is ready")
@@ -63,12 +75,27 @@ class FrontierAgent(Agent):
             {"role": "assistant", "content": "Price is $"}
         ]
 
+    def preprocess(self, item: str):
+        """
+        Run the description through llama3.2 running locally to make it most suitable for RAG lookup
+        """
+        system_message = "You rewrite product descriptions in a format most suitable for finding similar products in a Knowledge Base"
+        user_message = "Please write a short 2-3 sentence description of the following product; your description will be used to find similar products so it should be comprehensive and only about the product. Details:\n"
+        user_message += item
+        user_message += "\n\nNow please reply only with the short description, with no introduction"
+        messages = [{"role": "system", "content": system_message}, {"role": "user", "content": user_message}]
+        response = self.ollama_via_openai.chat.completions.create(model=self.PREPROCESS_MODEL, messages=messages, seed=42)
+        return response.choices[0].message.content
+
     def find_similars(self, description: str):
         """
         Return a list of items similar to the given one by looking in the Chroma datastore
         """
+        self.log("Frontier Agent is using Llama 3.2 to preprocess the description")
+        preprocessed = self.preprocess(description)
+        self.log("Frontier Agent is vectorizing using all-MiniLM-L6-v2")
+        vector = self.model.encode([preprocessed])
         self.log("Frontier Agent is performing a RAG search of the Chroma datastore to find 5 similar products")
-        vector = self.model.encode([description])
         results = self.collection.query(query_embeddings=vector.astype(float).tolist(), n_results=5)
         documents = results['documents'][0][:]
         prices = [m['price'] for m in results['metadatas'][0][:]]
@@ -91,8 +118,11 @@ class FrontierAgent(Agent):
         :return: an estimate of the price
         """
         documents, prices = self.find_similars(description)
-        self.log("Frontier Agent is about to call OpenAI with context including 5 similar products")
-        response = self.openai.chat.completions.create(
+        self.log(f"Frontier Agent is about to call {self.MODEL} with RAG context of 5 similar products")
+        messages = self.messages_for(description, documents, prices)
+        if 'deepseek' in self.MODEL:
+            messages[1]["content"] += "\nYou only need to guess the price, using the similar items to give you some reference point. Reply only with the price. Only think briefly; avoid overthinking."
+        response = self.client.chat.completions.create(
             model=self.MODEL, 
             messages=self.messages_for(description, documents, prices),
             seed=42,
