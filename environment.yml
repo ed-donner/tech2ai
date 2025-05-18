@@ -17,9 +17,6 @@ dependencies:
   - scikit-learn
   - chromadb
   - jupyter-dash
-  - sentencepiece
-  - pyarrow
-  - faiss-cpu
   - pip:
     - beautifulsoup4
     - plotly
@@ -38,15 +35,10 @@ dependencies:
     - psutil
     - setuptools
     - speedtest-cli
-    - langchain
-    - langchain-core
-    - langchain-text-splitters
-    - langchain-openai
-    - langchain-chroma
-    - langchain-community
-    - faiss-cpu
     - feedparser
     - twilio
     - torchviz
     - groq
     - networkx
+    - openai-agents
+    - xgboost

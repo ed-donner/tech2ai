@@ -13,8 +13,6 @@ transformers
 tqdm
 openai
 gradio
-tiktoken
-faiss-cpu
 datasets
 sentencepiece
 matplotlib
@@ -26,11 +24,11 @@ jupyter-dash
 beautifulsoup4
 modal
 ollama
-accelerate
-bitsandbytes
 psutil
 setuptools
 speedtest-cli
 torchviz
 groq
 networkx
+openai-agents
+xgboost

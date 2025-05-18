@@ -5,8 +5,8 @@ import json
 from typing import List, Optional
 from dotenv import load_dotenv
 import chromadb
-from agents.autonomous_planning_agent import AutonomousPlanningAgent
-from agents.deals import Opportunity
+from price_agents.autonomous_planning_agent import AutonomousPlanningAgent
+from price_agents.deals import Opportunity
 from sklearn.manifold import TSNE
 import numpy as np
 
