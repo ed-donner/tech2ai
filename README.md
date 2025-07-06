@@ -6,9 +6,9 @@ This is code to accompany my course on transitioning from a technical career to 
 
 **Essential links:**    
 1. The course [resources](https://edwarddonner.com/2024/10/16/from-software-engineer-to-ai-data-scientist-resources/)
-2. My 8 week action-packed course on [mastering LLM engineering](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/?couponCode=AGENTIC)
-3. My 6 week comprehensive course on [Complete Agentic AI Engineering](https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/?couponCode=AGENTIC_AI)
-4. NEW: my [Gen AI executive briefing for leaders and managers](https://www.udemy.com/course/executive-briefing-generative-ai-and-large-language-models-llm/?couponCode=FOR_AI_LEADERS) - deliver demonstrable ROI with LLMs
+- I also have intensive online courses that cover this material (and tons more) in much detail! An [8 week journey to LLM engineering](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/?couponCode=AGENTIC_AI_JUNE), and a [6 week journey to Agentic AI](https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/?couponCode=AGENTIC_AI_25_JUNE).
+- If you're willing to put up with more of me, [this post](https://edwarddonner.com/2025/05/28/connecting-my-courses-become-an-llm-expert-and-leader/) explains my courses and how they fit together!
+- I'm running a number of [Live Events](https://www.oreilly.com/search/?q=author%3A%20%22Ed%20Donner%22) with O'Reilly and Pearson
 5. If you'd like to stay in touch, I'm multi-modal... please [connect](https://www.linkedin.com/in/eddonner/) with me on LinkedIn, [follow](https://x.com/edwarddonner) me on X, and [subscribe](https://www.youtube.com/@Edward.Donner) to my YouTube channel!
 
 ![From Software Engineering To Data Science](tech2ai.jpg)

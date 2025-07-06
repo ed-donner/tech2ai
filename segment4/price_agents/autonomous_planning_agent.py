@@ -17,29 +17,39 @@ files_params = {"command": "npx", "args": ["-y", "@modelcontextprotocol/server-f
 planner = None
 
 @function_tool
-def scan_the_internet_for_bargains() -> Dict:
+def scan_the_internet_for_bargains() -> str:
     """
     This tool scans the internet for bargains and returns a curated list of top deals
     """
     planner.log("Autonomous Planning agent is calling scanner")
     results = planner.scanner.scan(memory=planner.memory)
-    return results.model_dump() if results else {}
+    return results.model_dump_json() if results else ""
 
 @function_tool
-def estimate_true_value(description: str) -> Dict:
+def estimate_true_value(description: str) -> str:
     """
     This tool estimates the true value of a product based on a text description of it
+
+    Args:
+        description: a description of the product to be estimated
     """
     planner.log(f"Autonomous Planning agent is estimating value")
     estimate1 = planner.frontier.price(description)
     estimate2 = planner.specialist.price(description)
     estimate = (estimate1 + estimate2) / 2.0
-    return {"description": description, "estimated_true_value": estimate}
+    result = {"description": description, "estimated_true_value": estimate}
+    return json.dumps(result)
 
 @function_tool
-def notify_user_of_deal(description: str, deal_price: float, estimated_true_value: float, url: str) -> Dict:
+def notify_user_of_deal(description: str, deal_price: float, estimated_true_value: float, url: str) -> str:
     """
     This tool notifies the user of a great deal, given a description of it, the price of the deal, and the estimated true value
+
+    Args:
+        description: a description of the product with the deal
+        deal_price: how much the product is being offered for
+        estimated_true_value: an estimate of how much this product is actually worth
+        url: the web address of the product
     """
     if planner.opportunity:
         planner.log("Autonomous Planning agent is trying to notify the user a 2nd time; ignoring")
@@ -49,7 +59,7 @@ def notify_user_of_deal(description: str, deal_price: float, estimated_true_valu
         deal = Deal(product_description=description, price=deal_price, url=url)
         discount = estimated_true_value - deal_price
         planner.opportunity = Opportunity(deal=deal, estimate=estimated_true_value, discount=discount)
-    return {"notification_sent": "ok"}
+    result = "notification sent"
 
 
 class AutonomousPlanningAgent(BaseAgent):
@@ -106,8 +116,7 @@ Only notify the user for the one best deal. Then just respond OK to indicate suc
             return loop.run_until_complete(coro)
 
     async def go(self):
-        async with MCPServerStdio(params=files_params) as server:
-            file_tools = await server.list_tools()
+        async with MCPServerStdio(params=files_params, client_session_timeout_seconds=30) as server:
             agent = Agent(name="Planner", instructions=self.system_message, model=self.MODEL, tools=self.get_tools(), mcp_servers=[server])
             reply = await Runner.run(agent, self.user_message)
         return reply.final_output
