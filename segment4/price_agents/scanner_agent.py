@@ -78,7 +78,7 @@ class ScannerAgent(Agent):
         if scraped:
             user_prompt = self.make_user_prompt(scraped)
             self.log("Scanner Agent is calling OpenAI using Structured Output")
-            result = self.openai.beta.chat.completions.parse(
+            result = self.openai.chat.completions.parse(
                 model=self.MODEL,
                 messages=[
                     {"role": "system", "content": self.SYSTEM_PROMPT},
