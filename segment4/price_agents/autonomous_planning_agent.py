@@ -66,7 +66,7 @@ class AutonomousPlanningAgent(BaseAgent):
 
     name = "Autonomous Planning Agent"
     color = BaseAgent.GREEN
-    MODEL = "gpt-4.1"
+    MODEL = "gpt-5"
 
     def __init__(self, collection):
         """
