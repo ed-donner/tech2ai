@@ -7,6 +7,9 @@ from deal_agent_framework import DealAgentFramework
 from price_agents.deals import Opportunity, Deal
 from log_utils import reformat
 import plotly.graph_objects as go
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
 
 
 class QueueHandler(logging.Handler):
