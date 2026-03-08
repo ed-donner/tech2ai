@@ -10,7 +10,7 @@ class FrontierAgent(Agent):
     name = "Frontier Agent"
     color = Agent.YELLOW
 
-    MODEL = "gemini/gemini-2.5-flash"
+    MODEL = "gemini/gemini-3-flash"
     PREPROCESS_MODEL = "groq/openai/gpt-oss-20b"
 
     def __init__(self, collection):
@@ -21,7 +21,7 @@ class FrontierAgent(Agent):
         self.log("Initializing Frontier Agent")
         gemini_key = os.getenv("GOOGLE_API_KEY")
         if gemini_key:
-            self.MODEL = "gemini/gemini-2.5-flash"
+            self.MODEL = "gemini/gemini-3-flash"
             self.log("Frontier Agent is set up with Gemini")
         else:
             self.MODEL = "gpt-4.1-mini"

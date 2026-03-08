@@ -8,6 +8,7 @@ def tag(el):
 
 def reveal(svg):
     if svg:
+        svg = svg.replace("```xml\n", "").replace("```", "")
         ET.register_namespace("", "http://www.w3.org/2000/svg")
 
         root = ET.fromstring(svg)
