@@ -21,6 +21,10 @@ If you'd like to stay in touch, please [connect](https://www.linkedin.com/in/edd
 I'm here to help you be most successful with your learning! If you hit any snafus, or if you have any ideas on how I can improve the course, please do reach out on LinkedIn or by emailing me direct (ed@edwarddonner.com). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:  
 https://www.linkedin.com/in/eddonner/
 
+### And there's someone else standing by to help
+
+I've added comprehensive AGENTS.md and CLAUDE.md files to the repo. You can ask the Cursor Agent or Claude Code to help you with questions or if you're stuck. It's well briefed and standing by to assist!
+
 ### An important point on API costs
 
 During the course, I'll suggest you try out the leading models at the forefront of progress, known as the Frontier models. I'll also suggest you run open-source models using Google Colab. These services have some charges, but I'll keep cost minimal - like, a few cents at a time.
